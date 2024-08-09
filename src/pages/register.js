@@ -22,6 +22,10 @@ export default function Register() {
         }
     };
 
+    const goToLogin = () => {
+        router.push('/login');
+    }
+
     return (
         <div className="max-w-md mx-auto p-4">
             <h1 className="text-2xl font-bold mb-4">Register</h1>
@@ -60,6 +64,12 @@ export default function Register() {
                     Register
                 </button>
             </form>
+            <button
+                onClick={goToLogin}
+                className="mt-4 w-full p-2 bg-gray-500 text-white rounded-md hover:bg-gray-600"
+            >
+                Go to Login
+            </button>
         </div>
     );
 }
